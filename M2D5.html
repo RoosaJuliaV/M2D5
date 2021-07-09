@@ -27,11 +27,24 @@
         -->
         <style>
 body {
-  background-color: black;
+  background-color: #121212;
   color: white;
+  margin-left: 10px;
+  margin-right: 10px;
 }
-h1 {
-  margin-top: 80px;
+.navbar-custom {
+  background-color: #0f0f0f;
+  background: linear-gradient(#0f0f0f 80%, #121212 100%)
+}
+.navbar-brand {
+  background-color: #0f0f0f;
+}
+.h1, h1 {
+  margin-top: 40px;
+  font-size: 60px;
+}
+p {
+  color: lightGrey;
 }
 .btn {
   margin: 13px;
@@ -56,9 +69,9 @@ h1 {
 }
 
 }
-input {
-  background-color: #616161;
-  color: white;
+.input {
+  background-color: #616161 !important;
+  color: white !important;
   padding: 4px 80px 2px 10px;
 }
 
@@ -71,13 +84,16 @@ h6 span {
     border-radius: .1rem;
     opacity: 0.92;
 }
+.img-fluid {
+
+}
         </style>
   </head>
 
   <body>
-    <nav class="navbar navbar-dark bg-dark" mx-n2>
+    <nav class="navbar navbar-custom">
         <a class="navbar-brand" href="#">
-            <img src="https://github.com/WHKL-9/FE-Jun21-M2D5/blob/main/netflix-ui-start/assets/netflix_logo.png?raw=true" width="110" height="50" alt="">
+            <img src="https://github.com/WHKL-9/FE-Jun21-M2D5/blob/main/netflix-ui-start/assets/netflix_logo.png?raw=true" width="100" height="50" alt="logo">
         </a>
     </nav>
 
@@ -87,23 +103,27 @@ h6 span {
                 <!-- empty container -->
             </div>
             <div class="col-5">
+            
                     <h1>Edit Profile</h1>
+                    
                     <hr class="my-4">
                     <div class="container">
                         <div class="row">
                             <div class="col-2">
                                 <div class="profilepic">
-                                    <img src="https://strive.school/favicon.ico" width=50px height=50px>
+                                    <img src="https://strive.school/favicon.ico" width="70" height="70" class="img-responsive">
                                 </div>
                             </div>
                             <div class="col-10">
                                 <div class="col">
-                                    <span class="Input__inputContainer___2mE_-"><input class="Input__input___2FFQo " input="[object Object]" id="name" placeholder="Type your full name here" name="fullname" value="Strive Student" ></span>
-                                    
+                                <div class="input">
+                                    <span class="Input__inputContainer___2mE_-"><input class="Input__input___2FFQo " 
+                                    input="[object Object]" id="name" placeholder="Type your full name here" name="fullname" value="Strive Student" ></span>
+                                    </div>
                                     <br><p>Language:</p>
 
                                     <div class="dropdown">
-                                      <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                      <button class="btn btn-outline-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                         Dropdown button
                                       </button>
                                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -116,11 +136,11 @@ h6 span {
 
                                     <div class="row">
                                     
-                                        <h4>Maturity Settings:</h4><br>
-                                        <p>ALL MATURITY RATINGS</p>
-                                        <p>Show titles of all maturity ratings for this profile.</p>
+                                        <h5>Maturity Settings:</h5><br>
+                                        <h6><span>ALL MATURITY RATINGS</span></h6>
+                                        <p>Show titles of <b>all maturity ratings</b> for this profile.</p>
                                         <div id="editbutton">
-                                        <button type="button" class="btn btn-outline-secondary">EDIT</button>
+                                        <button type="button" class="btn btn-outline-light">EDIT</button>
                                     </div>
                                     </div>
                                     <hr class="my-4">
@@ -160,9 +180,9 @@ h6 span {
                 <div class="col-12">
                     <hr class="my-4">
                     <div class="btn-toolbar d-flex justify-content-center">
-                    <button type="button" class="btn btn-outline-secondary">SAVE</button>
-                    <button type="button" class="btn btn-outline-secondary">CANCEL</button>
-                    <button type="button" class="btn btn-outline-secondary">DELETE PROFILE</button>
+                    <button type="button" class="btn btn-outline-light">SAVE</button>
+                    <button type="button" class="btn btn-outline-light">CANCEL</button>
+                    <button type="button" class="btn btn-outline-light">DELETE PROFILE</button>
                     </div>                               
                 </div>
             </div>  
@@ -180,7 +200,7 @@ h6 span {
 </html>
 
        
-<!--
+<!-- old code
   <style>
 body {
   background-color: black;
